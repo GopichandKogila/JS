@@ -1,0 +1,60 @@
+<html>
+	<body>
+		<script>
+			
+
+			/*
+			var a = new Map(
+				[
+				["t",6],
+				["v",8],
+				])
+			*/
+
+			
+			/*
+			a.set("t",9)
+			a.set(3,"result")
+			console.log(a.get(3))
+			a.delete("t")
+			console.log(a.size)
+			console.log(a.has("v"))
+			*/
+
+
+			/*
+			a.clear()
+			console.log(a)
+			*/
+
+			
+			/*
+			for (var entry of a){
+				console.log(entry[0]) // t v
+				console.log(entry[1]) // 6 8
+			}
+			*/
+
+			var mp = new Map()
+			str = "ttt aa bb"
+
+			for (var i of str){
+				if(mp.has(i)){
+			       mp.set(i, mp.get(i)+1)
+				}
+				else{
+					mp.set(i, 1)
+				}
+			}
+
+			console.log(mp.get("t")) //3
+			console.log(mp)
+
+
+
+
+
+
+		</script>
+	</body>
+</html>
