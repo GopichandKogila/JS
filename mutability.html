@@ -1,0 +1,45 @@
+<html>
+	<body>
+	<script>
+		
+		/*
+		function append5(num){
+			num += 5
+			console.log(num)
+		}
+
+		var x = 5
+		add5(x)
+		console.log(x)
+		*/
+
+		/*
+		function append5(arr){
+			//arr.push(5) - 1, 2, 3, 4, 5
+			arr[1] = 5  // 1, 5, 3, 4
+			console.log(arr)
+		}
+
+		var x = [1,2,3,4]
+		append5(x)
+		console.log(x)
+		*/
+
+
+
+		//Copy of the array
+
+		var x = [1,2,3]
+		var y = x.slice()   // also can use [...x]
+		console.log(y)
+		y[2] = 999
+		console.log(y) // 999 updates in var y 
+		console.log(x) // but not here
+
+
+
+
+
+	</script>
+	</body>
+</html>
